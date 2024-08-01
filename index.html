@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Поздравляю с 1 августа, Шахзода!</h1>
+        <h1 class="title">С праздником тебя, любимая Шахзода!</h1>
         <div class="compliments">
-            <p class="fade-in">Ты самая красивая...</p>
-            <p class="fade-in">Ты самая милая...</p>
-            <p class="fade-in">Ты самая добрая...</p>
-            <p class="fade-in">Ты самая любящая...</p>
+            <button id="show-compliments" onclick="toggleCompliments()">Показать 100 приятных слов</button>
+            <div id="compliments-list" class="hidden">
+                <p>Ты невероятно красивая...</p>
+                <p>Ты замечательная...</p>
+                <!-- Добавьте 98 других комплиментов здесь -->
+            </div>
         </div>
         <div class="photo-section">
             <h2>Фотогалерея</h2>
