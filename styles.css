@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6666;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.compliments {
+    margin-bottom: 20px;
+}
+
+.compliments p {
+    font-size: 1.5em;
+    color: #ff6666;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+.photo-section {
+    margin-top: 20px;
+}
+
+.photo-section h2 {
+    font-size: 1.8em;
+    color: #ff6666;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.photo-item {
+    position: relative;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.photo-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.photo-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
