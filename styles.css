@@ -31,23 +31,7 @@ body {
     margin-bottom: 20px;
 }
 
-button {
-    background: #ff758c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #ff7eb3;
-}
-
 #compliments-list {
-    display: none;
     margin-top: 20px;
 }
 
@@ -102,8 +86,4 @@ button:hover {
     to {
         opacity: 1;
     }
-}
-
-.hidden {
-    display: none;
 }
