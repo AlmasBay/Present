@@ -1,27 +1,29 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffe6e6;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: white;
 }
 
 .container {
     text-align: center;
     max-width: 600px;
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .title {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
-    color: #ff6666;
+    color: #fff;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -29,9 +31,28 @@ body {
     margin-bottom: 20px;
 }
 
-.compliments p {
-    font-size: 1.5em;
-    color: #ff6666;
+button {
+    background: #ff758c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff7eb3;
+}
+
+#compliments-list {
+    display: none;
+    margin-top: 20px;
+}
+
+#compliments-list p {
+    font-size: 1.2em;
     margin: 10px 0;
     opacity: 0;
     animation: fadeIn 3s ease-in-out forwards;
@@ -42,8 +63,7 @@ body {
 }
 
 .photo-section h2 {
-    font-size: 1.8em;
-    color: #ff6666;
+    font-size: 2em;
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
 }
@@ -82,4 +102,8 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.hidden {
+    display: none;
 }
